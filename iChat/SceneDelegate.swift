@@ -29,7 +29,7 @@ extension SceneDelegate {
     private func setWindow(_ windowScene: UIWindowScene) {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = AuthorizationViewController()
         window?.makeKeyAndVisible()
     }
 }
