@@ -1,5 +1,5 @@
 //
-//  UIColor+Extensions.swift
+//  UIColor+Extension.swift
 //  iChat
 //
 //  Created by Shamil on 4/12/20.
