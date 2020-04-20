@@ -13,4 +13,6 @@ enum ColorHexNames: String {
     case mainWhite = "#F7F8FD"
     case buttonRed = "#D0021B"
     case buttonBlack = "#333333"
+    
+    case textFieldLight = "#E6E6E6"
 }

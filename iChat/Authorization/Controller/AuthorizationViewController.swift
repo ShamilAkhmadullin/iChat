@@ -23,7 +23,7 @@ final class AuthorizationViewController: UIViewController {
     private let emailButton = UIButton(ButtonNames.email.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
     private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white, isShadow: true)
     
-    // MARK: - Application lifecycle
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +37,11 @@ final class AuthorizationViewController: UIViewController {
 extension AuthorizationViewController {
     
     private func setupConstraints() {
-        let googleView = ButtonFormView(label: googleLabel, button: googleButton)
-        let emailView = ButtonFormView(label: emailLabel, button: emailButton)
-        let loginView = ButtonFormView(label: alreadyLabel, button: loginButton)
+        let googleView = ButtonFormView(googleLabel, button: googleButton)
+        let emailView = ButtonFormView(emailLabel, button: emailButton)
+        let loginView = ButtonFormView(alreadyLabel, button: loginButton)
         
-        let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
+        let stackView = UIStackView([googleView, emailView, loginView], axis: .vertical, spacing: 40)
         
         view.addSubview(logoImageView)
         view.addSubview(stackView)

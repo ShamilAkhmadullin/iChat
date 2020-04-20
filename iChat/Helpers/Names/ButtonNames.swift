@@ -13,4 +13,6 @@ enum ButtonNames: String {
     case google = "Google"
     case email = "E-mail"
     case login = "Login"
+    
+    case signUp = "Sign Up"
 }

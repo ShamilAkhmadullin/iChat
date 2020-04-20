@@ -13,4 +13,9 @@ enum LabelNames: String {
     case google = "Get started with"
     case email = "Or sign up with"
     case alreadyOnboard = "Already onboard?"
+    
+    case welcome = "Good to see you!"
+    case emailSignUp = "Email"
+    case password = "Password"
+    case confirmPassword = "Confirm password"
 }

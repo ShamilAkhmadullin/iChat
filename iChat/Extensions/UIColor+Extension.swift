@@ -45,4 +45,8 @@ extension UIColor {
     static func buttonBlack() -> UIColor {
         return UIColor(ColorHexNames.buttonBlack.rawValue) ?? UIColor.black
     }
+    
+    static func textFieldLight() -> UIColor {
+        return UIColor(ColorHexNames.textFieldLight.rawValue) ?? UIColor.lightGray
+    }
 }

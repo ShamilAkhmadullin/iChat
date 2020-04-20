@@ -12,7 +12,7 @@ final class ButtonFormView: UIView {
     
     // MARK: - Initialization
     
-    init(label: UILabel, button: UIButton) {
+    init(_ label: UILabel, button: UIButton) {
         super.init(frame: .zero)
         addSubview(label)
         addSubview(button)
