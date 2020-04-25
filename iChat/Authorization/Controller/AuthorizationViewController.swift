@@ -16,7 +16,7 @@ final class AuthorizationViewController: UIViewController {
     let logoImageView = UIImageView(.init(imageLiteralResourceName: ImageNames.logo.rawValue), contentMode: .scaleAspectFit)
     
     private let googleLabel = UILabel(LabelNames.google.rawValue)
-    private let emailLabel = UILabel(LabelNames.email.rawValue)
+    private let signUpWithLabel = UILabel(LabelNames.signUpWith.rawValue)
     private let alreadyLabel = UILabel(LabelNames.alreadyOnboard.rawValue)
     
     private let googleButton = UIButton(ButtonNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
@@ -38,7 +38,7 @@ extension AuthorizationViewController {
     
     private func setupConstraints() {
         let googleView = ButtonFormView(googleLabel, button: googleButton)
-        let emailView = ButtonFormView(emailLabel, button: emailButton)
+        let emailView = ButtonFormView(signUpWithLabel, button: emailButton)
         let loginView = ButtonFormView(alreadyLabel, button: loginButton)
         
         let stackView = UIStackView([googleView, emailView, loginView], axis: .vertical, spacing: 40)

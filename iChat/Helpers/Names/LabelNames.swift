@@ -11,11 +11,16 @@ import Foundation
 enum LabelNames: String {
     
     case google = "Get started with"
-    case email = "Or sign up with"
+    case signUpWith = "Or sign up with"
     case alreadyOnboard = "Already onboard?"
     
     case welcome = "Good to see you!"
-    case emailSignUp = "Email"
+    case email = "Email"
     case password = "Password"
     case confirmPassword = "Confirm password"
+    
+    case welcomeBack = "Welcome back!"
+    case loginWith = "Login with"
+    case or = "or"
+    case needAnAccount = "Need an account?"
 }

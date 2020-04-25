@@ -1,29 +1,30 @@
 //
-//  SignUpViewController.swift
+//  LoginViewController.swift
 //  iChat
 //
-//  Created by Shamil on 4/19/20.
+//  Created by Shamil on 4/25/20.
 //  Copyright © 2020 Shamil Akhmadullin. All rights reserved.
 //
 
 import UIKit
 
-final class SignUpViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let welcomeLabel = UILabel(LabelNames.welcome.rawValue, font: .avenir(26))
+    private let welcomeLabel = UILabel(LabelNames.welcomeBack.rawValue, font: .avenir(26))
+    private let loginWithLabel = UILabel(LabelNames.loginWith.rawValue)
+    private let orLabel = UILabel(LabelNames.or.rawValue)
     private let emailLabel = UILabel(LabelNames.email.rawValue)
     private let passwordLabel = UILabel(LabelNames.password.rawValue)
-    private let confirmPasswordLabel = UILabel(LabelNames.confirmPassword.rawValue)
-    private let alreadyOnboardLabel = UILabel(LabelNames.alreadyOnboard.rawValue)
+    private let needAnAccountLabel = UILabel(LabelNames.needAnAccount.rawValue)
+    
+    private let googleButton = UIButton(ButtonNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
+    private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
+    private let signUpButton = UIButton(ButtonNames.signUp.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
     
     private let emailTextField = OneLineTextField(.textFieldLight())
     private let passwordTextField = OneLineTextField(.textFieldLight())
-    private let confirmPasswordTextField = OneLineTextField(.textFieldLight())
-    
-    private let signUpButton = UIButton(ButtonNames.signUp.rawValue, titleColor: .white, backgroundColor: .buttonBlack(), cornerRadius: 4)
-    private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
     
     // MARK: - Lifecycle
     
@@ -36,17 +37,18 @@ final class SignUpViewController: UIViewController {
 
 // MARK: - Setup constraints
 
-extension SignUpViewController {
+extension LoginViewController {
     
     private func setupConstraints() {
+        let loginWithView = ButtonFormView(loginWithLabel, button: googleButton)
+        
         let emailStackView = UIStackView([emailLabel, emailTextField], axis: .vertical, spacing: 0)
         let passwordStackView = UIStackView([passwordLabel, passwordTextField], axis: .vertical, spacing: 0)
-        let confirmPasswordStackView = UIStackView([confirmPasswordLabel, confirmPasswordTextField], axis: .vertical, spacing: 0)
-        let stackView = UIStackView([emailStackView, passwordStackView, confirmPasswordStackView, signUpButton], axis: .vertical, spacing: 40)
-        let bottomStackView = UIStackView([alreadyOnboardLabel, loginButton], axis: .horizontal, spacing: 10)
+        let stackView = UIStackView([loginWithView, orLabel, emailStackView, passwordStackView, loginButton], axis: .vertical, spacing: 40)
+        let bottomStackView = UIStackView([needAnAccountLabel, signUpButton], axis: .horizontal, spacing: 10)
         
         view.addSubview(welcomeLabel)
-        view.addSubview(stackView) 
+        view.addSubview(stackView)
         view.addSubview(bottomStackView)
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -54,9 +56,10 @@ extension SignUpViewController {
         bottomStackView.translatesAutoresizingMaskIntoConstraints = false
         
         bottomStackView.alignment = .firstBaseline
+        signUpButton.contentHorizontalAlignment = .leading
         
         NSLayoutConstraint.activate([
-            signUpButton.heightAnchor.constraint(equalToConstant: 60)
+            loginButton.heightAnchor.constraint(equalToConstant: 60)
         ])
         NSLayoutConstraint.activate([
             welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),

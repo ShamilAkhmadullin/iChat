@@ -11,7 +11,7 @@ import Foundation
 enum ButtonNames: String {
     
     case google = "Google"
-    case email = "E-mail"
+    case email = "Email"
     case login = "Login"
     
     case signUp = "Sign Up"

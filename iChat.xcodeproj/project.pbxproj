@@ -27,6 +27,7 @@
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
 		288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */; };
+		28FB434C2454B64400F2BD2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB434B2454B64400F2BD2A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		28FB434B2454B64400F2BD2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				288EDD79244CB4A200A7BAAD /* LaunchScreen */,
 				284E3FAD2446440600E2D3AD /* Authorization */,
 				288EDD7B244CB75700A7BAAD /* SignUp */,
+				28FB434A2454B62700F2BD2A /* Login */,
 				288EDD78244CB48100A7BAAD /* Assets */,
 				288EDD7A244CB5DF00A7BAAD /* Plist */,
 				283CB3CD2443A95D0040246F /* Helpers */,
@@ -213,6 +216,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		28FB434A2454B62700F2BD2A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				28FB434D2454B64E00F2BD2A /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		28FB434D2454B64E00F2BD2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28FB434B2454B64400F2BD2A /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +306,7 @@
 				2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */,
 				283CB3DF2443B2D30040246F /* UIImageView+Extension.swift in Sources */,
 				283CB3CA2443A5DE0040246F /* UIButton+Extension.swift in Sources */,
+				28FB434C2454B64400F2BD2A /* LoginViewController.swift in Sources */,
 				283CB3E12443B4FE0040246F /* ImageNames.swift in Sources */,
 				288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */,
 				282588FF24436A1D007000EC /* AppDelegate.swift in Sources */,
