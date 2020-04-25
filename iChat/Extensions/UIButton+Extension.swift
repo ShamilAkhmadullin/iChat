@@ -30,4 +30,17 @@ extension UIButton {
             layer.shadowOffset = CGSize(width: 0, height: 4)
         }
     }
+    
+    func customizeGoogleButton() {
+        let googleLogo = UIImageView(UIImage(named: ImageNames.googleLogo.rawValue), contentMode: .scaleAspectFit)
+        
+        addSubview(googleLogo)
+        
+        googleLogo.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            googleLogo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
+            googleLogo.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+    }
 }

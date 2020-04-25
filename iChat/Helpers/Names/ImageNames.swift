@@ -11,4 +11,9 @@ import Foundation
 enum ImageNames: String {
     
     case logo = "logo"
+    case googleLogo = "googleLogo"
+    case avatar = "avatar"
+    case plus = "plus"
+    case sent = "sent"
+    case tabBarLogo = "tabBarLogo"
 }

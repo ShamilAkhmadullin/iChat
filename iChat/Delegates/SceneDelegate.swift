@@ -29,7 +29,7 @@ extension SceneDelegate {
     private func setWindow(_ windowScene: UIWindowScene) {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = LoginViewController()
+        window?.rootViewController = SetupProfileViewController()
         window?.makeKeyAndVisible()
     }
 }

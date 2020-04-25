@@ -27,6 +27,8 @@
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
 		288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */; };
+		28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013942454C5B60026E123 /* SetupProfileViewController.swift */; };
+		28B013982454C9050026E123 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013972454C9050026E123 /* AddPhotoView.swift */; };
 		28FB434C2454B64400F2BD2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB434B2454B64400F2BD2A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		28B013942454C5B60026E123 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		28B013972454C9050026E123 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		28FB434B2454B64400F2BD2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 				284E3FAD2446440600E2D3AD /* Authorization */,
 				288EDD7B244CB75700A7BAAD /* SignUp */,
 				28FB434A2454B62700F2BD2A /* Login */,
+				28B013922454C5720026E123 /* SetupProfile */,
 				288EDD78244CB48100A7BAAD /* Assets */,
 				288EDD7A244CB5DF00A7BAAD /* Plist */,
 				283CB3CD2443A95D0040246F /* Helpers */,
@@ -216,6 +221,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		28B013922454C5720026E123 /* SetupProfile */ = {
+			isa = PBXGroup;
+			children = (
+				28B013962454C8FA0026E123 /* View */,
+				28B013932454C5A00026E123 /* Controller */,
+			);
+			path = SetupProfile;
+			sourceTree = "<group>";
+		};
+		28B013932454C5A00026E123 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28B013942454C5B60026E123 /* SetupProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28B013962454C8FA0026E123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28B013972454C9050026E123 /* AddPhotoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		28FB434A2454B62700F2BD2A /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +340,7 @@
 				283CB3E12443B4FE0040246F /* ImageNames.swift in Sources */,
 				288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */,
 				282588FF24436A1D007000EC /* AppDelegate.swift in Sources */,
+				28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */,
 				284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */,
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
 				283CB3D22443A9960040246F /* SceneNames.swift in Sources */,
@@ -317,6 +348,7 @@
 				283CB3DD2443B1AC0040246F /* LabelNames.swift in Sources */,
 				288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */,
 				283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */,
+				28B013982454C9050026E123 /* AddPhotoView.swift in Sources */,
 				2825890124436A1D007000EC /* SceneDelegate.swift in Sources */,
 				284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */,
 				283CB3D92443AFD00040246F /* ButtonNames.swift in Sources */,
