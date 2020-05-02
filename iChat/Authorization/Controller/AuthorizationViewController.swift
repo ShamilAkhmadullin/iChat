@@ -13,15 +13,15 @@ final class AuthorizationViewController: UIViewController {
     
     // MARK: - Properties
     
-    let logoImageView = UIImageView(.init(imageLiteralResourceName: ImageNames.logo.rawValue), contentMode: .scaleAspectFit)
+    let logoImageView = UIImageView(.init(imageLiteralResourceName: ImagesNames.logo.rawValue), contentMode: .scaleAspectFit)
     
-    private let googleLabel = UILabel(LabelNames.google.rawValue)
-    private let signUpWithLabel = UILabel(LabelNames.signUpWith.rawValue)
-    private let alreadyLabel = UILabel(LabelNames.alreadyOnboard.rawValue)
+    private let googleLabel = UILabel(LabelsNames.google.rawValue)
+    private let signUpWithLabel = UILabel(LabelsNames.signUpWith.rawValue)
+    private let alreadyLabel = UILabel(LabelsNames.alreadyOnboard.rawValue)
     
-    private let googleButton = UIButton(ButtonNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
-    private let emailButton = UIButton(ButtonNames.email.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
-    private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white, isShadow: true)
+    private let googleButton = UIButton(ButtonsNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
+    private let emailButton = UIButton(ButtonsNames.email.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
+    private let loginButton = UIButton(ButtonsNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white, isShadow: true)
     
     // MARK: - Lifecycle
 

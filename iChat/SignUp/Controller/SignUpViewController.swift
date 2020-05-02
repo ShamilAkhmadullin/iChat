@@ -12,18 +12,18 @@ final class SignUpViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let welcomeLabel = UILabel(LabelNames.welcome.rawValue, font: .avenir(26))
-    private let emailLabel = UILabel(LabelNames.email.rawValue)
-    private let passwordLabel = UILabel(LabelNames.password.rawValue)
-    private let confirmPasswordLabel = UILabel(LabelNames.confirmPassword.rawValue)
-    private let alreadyOnboardLabel = UILabel(LabelNames.alreadyOnboard.rawValue)
+    private let welcomeLabel = UILabel(LabelsNames.welcome.rawValue, font: .avenir(26))
+    private let emailLabel = UILabel(LabelsNames.email.rawValue)
+    private let passwordLabel = UILabel(LabelsNames.password.rawValue)
+    private let confirmPasswordLabel = UILabel(LabelsNames.confirmPassword.rawValue)
+    private let alreadyOnboardLabel = UILabel(LabelsNames.alreadyOnboard.rawValue)
     
     private let emailTextField = OneLineTextField(.textFieldLight())
     private let passwordTextField = OneLineTextField(.textFieldLight())
     private let confirmPasswordTextField = OneLineTextField(.textFieldLight())
     
-    private let signUpButton = UIButton(ButtonNames.signUp.rawValue, titleColor: .white, backgroundColor: .buttonBlack(), cornerRadius: 4)
-    private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
+    private let signUpButton = UIButton(ButtonsNames.signUp.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
+    private let loginButton = UIButton(ButtonsNames.login.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
     
     // MARK: - Lifecycle
     

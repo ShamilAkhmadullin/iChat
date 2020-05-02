@@ -1,5 +1,5 @@
 //
-//  LabelNames.swift
+//  LabelsNames.swift
 //  iChat
 //
 //  Created by Shamil on 4/12/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LabelNames: String {
+enum LabelsNames: String {
     
     case google = "Get started with"
     case signUpWith = "Or sign up with"
@@ -23,4 +23,9 @@ enum LabelNames: String {
     case loginWith = "Login with"
     case or = "or"
     case needAnAccount = "Need an account?"
+    
+    case setUpProfile = "Set up profile!"
+    case fullName = "Full name"
+    case aboutMe = "About me"
+    case sex = "sex"
 }

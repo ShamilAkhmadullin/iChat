@@ -1,5 +1,5 @@
 //
-//  FontNames.swift
+//  SceneName.swift
 //  iChat
 //
 //  Created by Shamil on 4/12/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FontNames: String {
+enum SceneName: String {
     
-    case avenir = "avenir"
+    case defaultConfiguration = "Default Configuration"
 }

@@ -12,16 +12,16 @@ final class LoginViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let welcomeLabel = UILabel(LabelNames.welcomeBack.rawValue, font: .avenir(26))
-    private let loginWithLabel = UILabel(LabelNames.loginWith.rawValue)
-    private let orLabel = UILabel(LabelNames.or.rawValue)
-    private let emailLabel = UILabel(LabelNames.email.rawValue)
-    private let passwordLabel = UILabel(LabelNames.password.rawValue)
-    private let needAnAccountLabel = UILabel(LabelNames.needAnAccount.rawValue)
+    private let welcomeLabel = UILabel(LabelsNames.welcomeBack.rawValue, font: .avenir(26))
+    private let loginWithLabel = UILabel(LabelsNames.loginWith.rawValue)
+    private let orLabel = UILabel(LabelsNames.or.rawValue)
+    private let emailLabel = UILabel(LabelsNames.email.rawValue)
+    private let passwordLabel = UILabel(LabelsNames.password.rawValue)
+    private let needAnAccountLabel = UILabel(LabelsNames.needAnAccount.rawValue)
     
-    private let googleButton = UIButton(ButtonNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
-    private let loginButton = UIButton(ButtonNames.login.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
-    private let signUpButton = UIButton(ButtonNames.signUp.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
+    private let googleButton = UIButton(ButtonsNames.google.rawValue, titleColor: .black, backgroundColor: .white, isShadow: true)
+    private let loginButton = UIButton(ButtonsNames.login.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
+    private let signUpButton = UIButton(ButtonsNames.signUp.rawValue, titleColor: .buttonRed(), backgroundColor: .white)
     
     private let emailTextField = OneLineTextField(.textFieldLight())
     private let passwordTextField = OneLineTextField(.textFieldLight())

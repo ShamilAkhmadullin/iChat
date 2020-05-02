@@ -1,5 +1,5 @@
 //
-//  ButtonNames.swift
+//  ButtonsNames.swift
 //  iChat
 //
 //  Created by Shamil on 4/12/20.
@@ -8,11 +8,13 @@
 
 import Foundation
 
-enum ButtonNames: String {
+enum ButtonsNames: String {
     
     case google = "Google"
     case email = "Email"
     case login = "Login"
     
     case signUp = "Sign Up"
+    
+    case goToChats = "Go to chats!"
 }

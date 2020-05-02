@@ -20,6 +20,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Scene session lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        return UISceneConfiguration(name: SceneNames.defaultConfiguration.rawValue, sessionRole: connectingSceneSession.role)
+        return UISceneConfiguration(name: SceneName.defaultConfiguration.rawValue, sessionRole: connectingSceneSession.role)
     }
 }

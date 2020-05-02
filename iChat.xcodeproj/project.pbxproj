@@ -14,15 +14,17 @@
 		2825890B24436A1E007000EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2825890924436A1E007000EC /* LaunchScreen.storyboard */; };
 		283CB3CA2443A5DE0040246F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3C92443A5DE0040246F /* UIButton+Extension.swift */; };
 		283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CB2443A8C00040246F /* UIFont+Extension.swift */; };
-		283CB3D02443A9740040246F /* FontNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CF2443A9740040246F /* FontNames.swift */; };
-		283CB3D22443A9960040246F /* SceneNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D12443A9960040246F /* SceneNames.swift */; };
+		283CB3D02443A9740040246F /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CF2443A9740040246F /* FontName.swift */; };
+		283CB3D22443A9960040246F /* SceneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D12443A9960040246F /* SceneName.swift */; };
 		283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D42443AA830040246F /* UIColor+Extension.swift */; };
 		283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D62443AD300040246F /* ColorHexNames.swift */; };
-		283CB3D92443AFD00040246F /* ButtonNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D82443AFD00040246F /* ButtonNames.swift */; };
+		283CB3D92443AFD00040246F /* ButtonsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D82443AFD00040246F /* ButtonsNames.swift */; };
 		283CB3DB2443B0FE0040246F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3DA2443B0FE0040246F /* UILabel+Extension.swift */; };
-		283CB3DD2443B1AC0040246F /* LabelNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3DC2443B1AC0040246F /* LabelNames.swift */; };
+		283CB3DD2443B1AC0040246F /* LabelsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3DC2443B1AC0040246F /* LabelsNames.swift */; };
 		283CB3DF2443B2D30040246F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3DE2443B2D30040246F /* UIImageView+Extension.swift */; };
-		283CB3E12443B4FE0040246F /* ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3E02443B4FE0040246F /* ImageNames.swift */; };
+		283CB3E12443B4FE0040246F /* ImagesNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3E02443B4FE0040246F /* ImagesNames.swift */; };
+		283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B01245DED0200C90C61 /* UISegmentedControl+Extension.swift */; };
+		283F0B04245DED7600C90C61 /* SegmentedControlsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B03245DED7600C90C61 /* SegmentedControlsNames.swift */; };
 		284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */; };
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
@@ -42,15 +44,17 @@
 		2825890C24436A1E007000EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283CB3C92443A5DE0040246F /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		283CB3CB2443A8C00040246F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		283CB3CF2443A9740040246F /* FontNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontNames.swift; sourceTree = "<group>"; };
-		283CB3D12443A9960040246F /* SceneNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneNames.swift; sourceTree = "<group>"; };
+		283CB3CF2443A9740040246F /* FontName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		283CB3D12443A9960040246F /* SceneName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneName.swift; sourceTree = "<group>"; };
 		283CB3D42443AA830040246F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		283CB3D62443AD300040246F /* ColorHexNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHexNames.swift; sourceTree = "<group>"; };
-		283CB3D82443AFD00040246F /* ButtonNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNames.swift; sourceTree = "<group>"; };
+		283CB3D82443AFD00040246F /* ButtonsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsNames.swift; sourceTree = "<group>"; };
 		283CB3DA2443B0FE0040246F /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		283CB3DC2443B1AC0040246F /* LabelNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelNames.swift; sourceTree = "<group>"; };
+		283CB3DC2443B1AC0040246F /* LabelsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsNames.swift; sourceTree = "<group>"; };
 		283CB3DE2443B2D30040246F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		283CB3E02443B4FE0040246F /* ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNames.swift; sourceTree = "<group>"; };
+		283CB3E02443B4FE0040246F /* ImagesNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesNames.swift; sourceTree = "<group>"; };
+		283F0B01245DED0200C90C61 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
+		283F0B03245DED7600C90C61 /* SegmentedControlsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlsNames.swift; sourceTree = "<group>"; };
 		284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -115,12 +119,13 @@
 		283CB3CE2443A9660040246F /* Names */ = {
 			isa = PBXGroup;
 			children = (
-				283CB3CF2443A9740040246F /* FontNames.swift */,
-				283CB3D12443A9960040246F /* SceneNames.swift */,
+				283CB3CF2443A9740040246F /* FontName.swift */,
+				283CB3D12443A9960040246F /* SceneName.swift */,
 				283CB3D62443AD300040246F /* ColorHexNames.swift */,
-				283CB3D82443AFD00040246F /* ButtonNames.swift */,
-				283CB3DC2443B1AC0040246F /* LabelNames.swift */,
-				283CB3E02443B4FE0040246F /* ImageNames.swift */,
+				283CB3D82443AFD00040246F /* ButtonsNames.swift */,
+				283CB3DC2443B1AC0040246F /* LabelsNames.swift */,
+				283CB3E02443B4FE0040246F /* ImagesNames.swift */,
+				283F0B03245DED7600C90C61 /* SegmentedControlsNames.swift */,
 			);
 			path = Names;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				283CB3DA2443B0FE0040246F /* UILabel+Extension.swift */,
 				283CB3DE2443B2D30040246F /* UIImageView+Extension.swift */,
 				284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */,
+				283F0B01245DED0200C90C61 /* UISegmentedControl+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,27 +338,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283F0B04245DED7600C90C61 /* SegmentedControlsNames.swift in Sources */,
 				283CB3DB2443B0FE0040246F /* UILabel+Extension.swift in Sources */,
 				2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */,
 				283CB3DF2443B2D30040246F /* UIImageView+Extension.swift in Sources */,
 				283CB3CA2443A5DE0040246F /* UIButton+Extension.swift in Sources */,
 				28FB434C2454B64400F2BD2A /* LoginViewController.swift in Sources */,
-				283CB3E12443B4FE0040246F /* ImageNames.swift in Sources */,
+				283CB3E12443B4FE0040246F /* ImagesNames.swift in Sources */,
 				288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */,
 				282588FF24436A1D007000EC /* AppDelegate.swift in Sources */,
 				28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */,
 				284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */,
+				283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */,
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
-				283CB3D22443A9960040246F /* SceneNames.swift in Sources */,
+				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
 				283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */,
-				283CB3DD2443B1AC0040246F /* LabelNames.swift in Sources */,
+				283CB3DD2443B1AC0040246F /* LabelsNames.swift in Sources */,
 				288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */,
 				283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */,
 				28B013982454C9050026E123 /* AddPhotoView.swift in Sources */,
 				2825890124436A1D007000EC /* SceneDelegate.swift in Sources */,
 				284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */,
-				283CB3D92443AFD00040246F /* ButtonNames.swift in Sources */,
-				283CB3D02443A9740040246F /* FontNames.swift in Sources */,
+				283CB3D92443AFD00040246F /* ButtonsNames.swift in Sources */,
+				283CB3D02443A9740040246F /* FontName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ final class AddPhotoView: UIView {
     private var circleImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: ImageNames.avatar.rawValue)
+        imageView.image = UIImage(named: ImagesNames.avatar.rawValue)
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         imageView.layer.borderColor = UIColor.black.cgColor
@@ -25,7 +25,7 @@ final class AddPhotoView: UIView {
     
     private let plusButton: UIButton = {
         let button = UIButton(type: .system)
-        let plusImage = UIImage(named: ImageNames.plus.rawValue)
+        let plusImage = UIImage(named: ImagesNames.plus.rawValue)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(plusImage, for: .normal)
         button.tintColor = .buttonBlack()

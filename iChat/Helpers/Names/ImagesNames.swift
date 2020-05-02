@@ -1,5 +1,5 @@
 //
-//  ImageNames.swift
+//  ImagesNames.swift
 //  iChat
 //
 //  Created by Shamil on 4/12/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ImageNames: String {
+enum ImagesNames: String {
     
     case logo = "logo"
     case googleLogo = "googleLogo"

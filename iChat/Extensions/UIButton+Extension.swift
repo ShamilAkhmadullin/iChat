@@ -32,7 +32,7 @@ extension UIButton {
     }
     
     func customizeGoogleButton() {
-        let googleLogo = UIImageView(UIImage(named: ImageNames.googleLogo.rawValue), contentMode: .scaleAspectFit)
+        let googleLogo = UIImageView(UIImage(named: ImagesNames.googleLogo.rawValue), contentMode: .scaleAspectFit)
         
         addSubview(googleLogo)
         
