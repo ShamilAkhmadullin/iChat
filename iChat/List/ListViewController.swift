@@ -18,8 +18,8 @@ final class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         setupCollectionView()
+        setupSearchBar()
     }
 }
 
@@ -33,14 +33,39 @@ extension ListViewController {
         view.addSubview(collectionView)
         
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .mainWhite()
     
         collectionView.delegate = self
         collectionView.dataSource = self
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CellsIdentifiers.listCell.rawValue)
     }
+    
+    private func setupSearchBar() {
+        navigationController?.navigationBar.barTintColor = .mainWhite()
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        
+        searchController.searchBar.delegate = self
+    }
 }
+
+// MARK: - UISearchBarDelegate
+
+extension ListViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
+}
+
 
 // MARK: - UICollectionViewDataSource
 
