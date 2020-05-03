@@ -22,6 +22,9 @@ final class ButtonFormView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            bottomAnchor.constraint(equalTo: button.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: topAnchor),
             label.leadingAnchor.constraint(equalTo: leadingAnchor)
         ])
@@ -31,7 +34,6 @@ final class ButtonFormView: UIView {
             button.trailingAnchor.constraint(equalTo: trailingAnchor),
             button.heightAnchor.constraint(equalToConstant: 60)
         ])
-        bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

@@ -12,18 +12,17 @@ final class SetupProfileViewController: UIViewController {
     
     // MARK: - Properties
     
+    private let welcomeLabel = UILabel(LabelsNames.setUpProfile.rawValue, font: .avenir(26))
+    private let fullNameLabel = UILabel(LabelsNames.fullName.rawValue)
+    private let aboutMeLabel = UILabel(LabelsNames.aboutMe.rawValue)
+    private let sexLabel = UILabel(LabelsNames.sex.rawValue)
+    
+    private let fullNameTextField = OneLineTextField(.textFieldLight())
+    private let aboutMeTextField = OneLineTextField(.textFieldLight())
+    
     private let fillImageView = AddPhotoView()
-    
-    let welcomeLabel = UILabel(LabelsNames.setUpProfile.rawValue, font: .avenir(26))
-    let fullNameLabel = UILabel(LabelsNames.fullName.rawValue)
-    let aboutMeLabel = UILabel(LabelsNames.aboutMe.rawValue)
-    let sexLabel = UILabel(LabelsNames.sex.rawValue)
-    
-    let fullNameTextField = OneLineTextField(.textFieldLight())
-    let aboutMeTextField = OneLineTextField(.textFieldLight())
-    
-    let sexSegmentedControl = UISegmentedControl(SegmentedControlsNames.male.rawValue, second: SegmentedControlsNames.female.rawValue)
-    let goToChatsButton = UIButton(ButtonsNames.goToChats.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
+    private let sexSegmentedControl = UISegmentedControl(SegmentedControlsNames.male.rawValue, second: SegmentedControlsNames.female.rawValue)
+    private let goToChatsButton = UIButton(ButtonsNames.goToChats.rawValue, titleColor: .white, backgroundColor: .buttonBlack())
     
     // MARK: - Lifecycle
     

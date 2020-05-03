@@ -15,4 +15,6 @@ enum ColorHexNames: String {
     case buttonBlack = "#333333"
     
     case textFieldLight = "#E6E6E6"
+    
+    case tabBarPurple = "#8E5AF7"
 }

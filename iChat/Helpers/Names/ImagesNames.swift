@@ -16,4 +16,6 @@ enum ImagesNames: String {
     case plus = "plus"
     case sent = "sent"
     case tabBarLogo = "tabBarLogo"
+    case systemBubles = "bubble.left.and.bubble.right"
+    case systemPerson = "person.2"
 }

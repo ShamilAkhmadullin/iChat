@@ -72,7 +72,7 @@ struct AuthorizationViewControllerProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let viewController = AuthorizationViewController()
+        private let viewController = AuthorizationViewController()
         
         func makeUIViewController(context: UIViewControllerRepresentableContext<AuthorizationViewControllerProvider.ContainerView>) -> AuthorizationViewController {
             return viewController

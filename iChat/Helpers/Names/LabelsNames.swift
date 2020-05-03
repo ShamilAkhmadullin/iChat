@@ -27,5 +27,5 @@ enum LabelsNames: String {
     case setUpProfile = "Set up profile!"
     case fullName = "Full name"
     case aboutMe = "About me"
-    case sex = "sex"
+    case sex = "Sex"
 }

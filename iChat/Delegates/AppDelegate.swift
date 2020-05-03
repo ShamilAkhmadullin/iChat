@@ -17,7 +17,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    // MARK: - Scene session lifecycle
+    // MARK: - Scene configuration
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: SceneName.defaultConfiguration.rawValue, sessionRole: connectingSceneSession.role)

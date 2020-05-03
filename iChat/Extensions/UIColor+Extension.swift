@@ -49,4 +49,8 @@ extension UIColor {
     static func textFieldLight() -> UIColor {
         return UIColor(ColorHexNames.textFieldLight.rawValue) ?? UIColor.lightGray
     }
+    
+    static func tabBarPurple() -> UIColor {
+        return UIColor(ColorHexNames.tabBarPurple.rawValue) ?? UIColor.purple
+    }
 }
