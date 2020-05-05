@@ -30,6 +30,8 @@
 		283F0B0B245F07FE00C90C61 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B0A245F07FE00C90C61 /* MainTabBarController.swift */; };
 		283F0B0F245F0A5600C90C61 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */; };
 		283F0B11245F0B5600C90C61 /* ViewControllersTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */; };
+		283F0B152461709700C90C61 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B142461709700C90C61 /* MChat.swift */; };
+		283F0B17246170B400C90C61 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B16246170B400C90C61 /* Section.swift */; };
 		284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */; };
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
@@ -65,6 +67,8 @@
 		283F0B0A245F07FE00C90C61 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersTitles.swift; sourceTree = "<group>"; };
+		283F0B142461709700C90C61 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		283F0B16246170B400C90C61 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +166,8 @@
 		283F0B05245F055000C90C61 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				283F0B06245F056600C90C61 /* ListViewController.swift */,
+				283F0B132461708B00C90C61 /* Model */,
+				283F0B122461708300C90C61 /* Controller */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -181,6 +186,23 @@
 				283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */,
 			);
 			path = People;
+			sourceTree = "<group>";
+		};
+		283F0B122461708300C90C61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				283F0B06245F056600C90C61 /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		283F0B132461708B00C90C61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				283F0B142461709700C90C61 /* MChat.swift */,
+				283F0B16246170B400C90C61 /* Section.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		284E3FAD2446440600E2D3AD /* Authorization */ = {
@@ -392,8 +414,10 @@
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
 				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
 				283F0B07245F056600C90C61 /* ListViewController.swift in Sources */,
+				283F0B17246170B400C90C61 /* Section.swift in Sources */,
 				283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */,
 				283CB3DD2443B1AC0040246F /* LabelsNames.swift in Sources */,
+				283F0B152461709700C90C61 /* MChat.swift in Sources */,
 				288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */,
 				283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */,
 				28B013982454C9050026E123 /* AddPhotoView.swift in Sources */,
