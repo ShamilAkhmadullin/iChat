@@ -8,12 +8,12 @@
 
 import UIKit
 
-struct MChat: Hashable {
+struct MChat: Hashable, Decodable {
     
     var userName: String
-    var userImage: UIImage
+    var userImageString: String
     var lastMessage: String
-    var id = UUID()
+    var id: Int
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)

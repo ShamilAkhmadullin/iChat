@@ -10,5 +10,6 @@ import Foundation
 
 enum CellsIdentifiers: String {
     
-    case listCell = "listCell"
+    case waitingChatsCell = "waitingChatsCell"
+    case activeChatsCell = "activeChatsCell"
 }

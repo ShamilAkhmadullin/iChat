@@ -10,5 +10,6 @@ import Foundation
 
 enum Section: Int, CaseIterable {
     
+    case waitingChats
     case activeChats
 }

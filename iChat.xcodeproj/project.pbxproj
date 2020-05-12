@@ -32,6 +32,9 @@
 		283F0B11245F0B5600C90C61 /* ViewControllersTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */; };
 		283F0B152461709700C90C61 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B142461709700C90C61 /* MChat.swift */; };
 		283F0B17246170B400C90C61 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B16246170B400C90C61 /* Section.swift */; };
+		283F0B4A2469608000C90C61 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 283F0B482469608000C90C61 /* activeChats.json */; };
+		283F0B4B2469608000C90C61 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 283F0B492469608000C90C61 /* waitingChats.json */; };
+		283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */; };
 		284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */; };
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
@@ -69,6 +72,9 @@
 		283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersTitles.swift; sourceTree = "<group>"; };
 		283F0B142461709700C90C61 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		283F0B16246170B400C90C61 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		283F0B482469608000C90C61 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
+		283F0B492469608000C90C61 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
+		283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		283CB3CD2443A95D0040246F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				283F0B4C2469608400C90C61 /* Jsons */,
 				283CB3CE2443A9660040246F /* Names */,
 			);
 			path = Helpers;
@@ -159,6 +166,7 @@
 				283CB3DE2443B2D30040246F /* UIImageView+Extension.swift */,
 				284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */,
 				283F0B01245DED0200C90C61 /* UISegmentedControl+Extension.swift */,
+				283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +211,15 @@
 				283F0B16246170B400C90C61 /* Section.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		283F0B4C2469608400C90C61 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				283F0B482469608000C90C61 /* activeChats.json */,
+				283F0B492469608000C90C61 /* waitingChats.json */,
+			);
+			path = Jsons;
 			sourceTree = "<group>";
 		};
 		284E3FAD2446440600E2D3AD /* Authorization */ = {
@@ -388,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2825890B24436A1E007000EC /* LaunchScreen.storyboard in Resources */,
+				283F0B4A2469608000C90C61 /* activeChats.json in Resources */,
 				2825890824436A1E007000EC /* Assets.xcassets in Resources */,
+				283F0B4B2469608000C90C61 /* waitingChats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +439,7 @@
 				283F0B152461709700C90C61 /* MChat.swift in Sources */,
 				288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */,
 				283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */,
+				283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */,
 				28B013982454C9050026E123 /* AddPhotoView.swift in Sources */,
 				283F0B0B245F07FE00C90C61 /* MainTabBarController.swift in Sources */,
 				283F0B09245F066300C90C61 /* CellsIdentifiers.swift in Sources */,
