@@ -32,7 +32,7 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         googleButton.customizeGoogleButton()
-        setupConstraints()
+        setConstraints()
     }
 }
 
@@ -40,7 +40,7 @@ final class LoginViewController: UIViewController {
 
 extension LoginViewController {
     
-    private func setupConstraints() {
+    private func setConstraints() {
         let loginWithView = ButtonFormView(loginWithLabel, button: googleButton)
         
         let emailStackView = UIStackView([emailLabel, emailTextField], axis: .vertical, spacing: 0)

@@ -28,4 +28,7 @@ enum LabelsNames: String {
     case fullName = "Full name"
     case aboutMe = "About me"
     case sex = "Sex"
+    
+    case userName = "User name"
+    case howAreYou = "How are you?"
 }

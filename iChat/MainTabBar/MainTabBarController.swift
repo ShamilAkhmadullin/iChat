@@ -15,7 +15,7 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.tintColor = .tabBarPurple()
-        setupTabBarViewControllers()
+        setTabBarViewControllers()
     }
 }
 
@@ -23,7 +23,7 @@ final class MainTabBarController: UITabBarController {
 
 extension MainTabBarController {
     
-    private func setupTabBarViewControllers() {
+    private func setTabBarViewControllers() {
         let listViewController = ListViewController()
         let peopleViewController = PeopleViewController()
         

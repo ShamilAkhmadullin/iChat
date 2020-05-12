@@ -29,7 +29,7 @@ final class SetupProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setupConstraints()
+        setConstraints()
     }
 }
 
@@ -37,7 +37,7 @@ final class SetupProfileViewController: UIViewController {
 
 extension SetupProfileViewController {
     
-    private func setupConstraints() {
+    private func setConstraints() {
         let fullNameStackView = UIStackView([fullNameLabel, fullNameTextField], axis: .vertical, spacing: 0)
         let aboutMeStackView = UIStackView([aboutMeLabel, aboutMeTextField], axis: .vertical, spacing: 0)
         let sexStackView = UIStackView([sexLabel, sexSegmentedControl], axis: .vertical, spacing: 12)

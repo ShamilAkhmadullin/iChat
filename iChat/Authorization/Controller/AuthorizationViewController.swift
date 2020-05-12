@@ -29,7 +29,7 @@ final class AuthorizationViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         googleButton.customizeGoogleButton()
-        setupConstraints()
+        setConstraints()
     }
 }
 
@@ -37,7 +37,7 @@ final class AuthorizationViewController: UIViewController {
 
 extension AuthorizationViewController {
     
-    private func setupConstraints() {
+    private func setConstraints() {
         let googleView = ButtonFormView(googleLabel, button: googleButton)
         let emailView = ButtonFormView(signUpWithLabel, button: emailButton)
         let loginView = ButtonFormView(alreadyLabel, button: loginButton)

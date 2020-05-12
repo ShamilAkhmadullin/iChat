@@ -14,7 +14,7 @@
 		2825890B24436A1E007000EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2825890924436A1E007000EC /* LaunchScreen.storyboard */; };
 		283CB3CA2443A5DE0040246F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3C92443A5DE0040246F /* UIButton+Extension.swift */; };
 		283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CB2443A8C00040246F /* UIFont+Extension.swift */; };
-		283CB3D02443A9740040246F /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CF2443A9740040246F /* FontName.swift */; };
+		283CB3D02443A9740040246F /* FontsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3CF2443A9740040246F /* FontsNames.swift */; };
 		283CB3D22443A9960040246F /* SceneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D12443A9960040246F /* SceneName.swift */; };
 		283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D42443AA830040246F /* UIColor+Extension.swift */; };
 		283CB3D72443AD300040246F /* ColorHexNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CB3D62443AD300040246F /* ColorHexNames.swift */; };
@@ -37,6 +37,9 @@
 		283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */; };
 		284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */; };
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
+		2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */; };
+		2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */; };
+		2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
 		288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */; };
 		28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013942454C5B60026E123 /* SetupProfileViewController.swift */; };
@@ -54,7 +57,7 @@
 		2825890C24436A1E007000EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283CB3C92443A5DE0040246F /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		283CB3CB2443A8C00040246F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		283CB3CF2443A9740040246F /* FontName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		283CB3CF2443A9740040246F /* FontsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsNames.swift; sourceTree = "<group>"; };
 		283CB3D12443A9960040246F /* SceneName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneName.swift; sourceTree = "<group>"; };
 		283CB3D42443AA830040246F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		283CB3D62443AD300040246F /* ColorHexNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHexNames.swift; sourceTree = "<group>"; };
@@ -77,6 +80,9 @@
 		283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsNames.swift; sourceTree = "<group>"; };
+		2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		28B013942454C5B60026E123 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +149,7 @@
 		283CB3CE2443A9660040246F /* Names */ = {
 			isa = PBXGroup;
 			children = (
-				283CB3CF2443A9740040246F /* FontName.swift */,
+				283CB3CF2443A9740040246F /* FontsNames.swift */,
 				283CB3D12443A9960040246F /* SceneName.swift */,
 				283CB3D62443AD300040246F /* ColorHexNames.swift */,
 				283CB3D82443AFD00040246F /* ButtonsNames.swift */,
@@ -152,6 +158,7 @@
 				283F0B03245DED7600C90C61 /* SegmentedControlsNames.swift */,
 				283F0B08245F066300C90C61 /* CellsIdentifiers.swift */,
 				283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */,
+				2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */,
 			);
 			path = Names;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 		283F0B05245F055000C90C61 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2857CB0F246B3E74004D18A2 /* View */,
 				283F0B132461708B00C90C61 /* Model */,
 				283F0B122461708300C90C61 /* Controller */,
 			);
@@ -254,6 +262,31 @@
 				2825890024436A1D007000EC /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2857CB0E246B3E64004D18A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2857CB10246B3E94004D18A2 /* Protocol */,
+				2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2857CB0F246B3E74004D18A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2857CB0E246B3E64004D18A2 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2857CB10246B3E94004D18A2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		288EDD78244CB48100A7BAAD /* Assets */ = {
@@ -419,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283F0B04245DED7600C90C61 /* SegmentedControlsNames.swift in Sources */,
+				2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */,
 				283CB3DB2443B0FE0040246F /* UILabel+Extension.swift in Sources */,
 				2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */,
 				283CB3DF2443B2D30040246F /* UIImageView+Extension.swift in Sources */,
@@ -426,9 +460,11 @@
 				28FB434C2454B64400F2BD2A /* LoginViewController.swift in Sources */,
 				283CB3E12443B4FE0040246F /* ImagesNames.swift in Sources */,
 				288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */,
+				2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */,
 				282588FF24436A1D007000EC /* AppDelegate.swift in Sources */,
 				28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */,
 				284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */,
+				2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */,
 				283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */,
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
 				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
@@ -448,7 +484,7 @@
 				284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */,
 				283F0B11245F0B5600C90C61 /* ViewControllersTitles.swift in Sources */,
 				283CB3D92443AFD00040246F /* ButtonsNames.swift in Sources */,
-				283CB3D02443A9740040246F /* FontName.swift in Sources */,
+				283CB3D02443A9740040246F /* FontsNames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

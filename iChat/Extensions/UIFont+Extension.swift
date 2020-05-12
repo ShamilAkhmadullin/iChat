@@ -11,6 +11,10 @@ import UIKit
 extension UIFont {
     
     static func avenir(_ size: CGFloat) -> UIFont? {
-        return UIFont(name: FontName.avenir.rawValue, size: size)
+        return UIFont(name: FontsNames.avenir.rawValue, size: size)
+    }
+    
+    static func laoSangamMN(_ size: CGFloat) -> UIFont? {
+        return UIFont(name: FontsNames.laoSangamMN.rawValue, size: size)
     }
 }

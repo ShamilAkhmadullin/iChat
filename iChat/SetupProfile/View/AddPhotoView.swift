@@ -38,7 +38,7 @@ final class AddPhotoView: UIView {
         super.init(frame: frame)
         addSubview(circleImageView)
         addSubview(plusButton)
-        setupConstraints()
+        setConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -58,7 +58,7 @@ final class AddPhotoView: UIView {
 
 extension AddPhotoView {
     
-    private func setupConstraints() {
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             bottomAnchor.constraint(equalTo: circleImageView.bottomAnchor),
             trailingAnchor.constraint(equalTo: plusButton.trailingAnchor)

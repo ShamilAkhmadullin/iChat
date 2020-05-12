@@ -14,8 +14,9 @@ final class ListViewController: UIViewController {
         
     private var collectionView: UICollectionView!
     private var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
-    private let activeChats = Bundle.main.decode([MChat].self, from: "activeChats.json")
-    private let waitingChats = Bundle.main.decode([MChat].self, from: "waitingChats.json")
+    
+    private let waitingChats = Bundle.main.decode([MChat].self, from: JsonsNames.waitingChats.rawValue)
+    private let activeChats = Bundle.main.decode([MChat].self, from: JsonsNames.activeChats.rawValue)
     
     // MARK: - Lifecycle
     
@@ -61,7 +62,7 @@ extension ListViewController {
         collectionView.backgroundColor = .mainWhite()
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
+        collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
     }
 }
 
@@ -70,22 +71,29 @@ extension ListViewController {
 extension ListViewController {
     
     private func setDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView) { collectionView, indexPath, chat -> UICollectionViewCell? in
+        dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView) { [weak self] collectionView, indexPath, chat -> UICollectionViewCell? in
             guard let section = Section(rawValue: indexPath.section) else {
-                fatalError()
+                fatalError("Unable to setup section")
             }
             
             switch section {
             case .waitingChats:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue, for: indexPath)
-                cell.backgroundColor = .yellow
+                cell.backgroundColor = .purple
                 return cell
             case .activeChats:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue, for: indexPath)
-                cell.backgroundColor = .blue
-                return cell
+                return self?.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
             }
         }
+    }
+    
+    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {
+            fatalError("Unable to dequeue \(cellType)")
+        }
+        
+        cell.configure(with: value)
+        return cell
     }
 }
 
@@ -96,7 +104,7 @@ extension ListViewController {
     private func setCompositionalLayout() -> UICollectionViewCompositionalLayout {
         let layout = UICollectionViewCompositionalLayout { [weak self] sectionIndex, layoutEnvironment -> NSCollectionLayoutSection? in
             guard let section = Section(rawValue: sectionIndex) else {
-                fatalError()
+                fatalError("Unable to setup section")
             }
             
             switch section {
