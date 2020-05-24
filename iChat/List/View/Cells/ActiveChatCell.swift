@@ -12,8 +12,8 @@ final class ActiveChatCell: UICollectionViewCell {
     
     // MARK: - Properties
     
-    let gradientView = UIView()
     let friendImageView = UIImageView()
+    let gradientView = GradientView(from: .topTrailing, to: .bottomLeading, startColor: #colorLiteral(red: 0.7882352941, green: 0.631372549, blue: 0.9411764706, alpha: 1), endColor: #colorLiteral(red: 0.4784313725, green: 0.6980392157, blue: 0.9215686275, alpha: 1))
     
     let friendName = UILabel(LabelsNames.userName.rawValue, font: .laoSangamMN(20))
     let lastMessage = UILabel(LabelsNames.howAreYou.rawValue, font: .laoSangamMN(18))

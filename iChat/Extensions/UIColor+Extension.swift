@@ -53,4 +53,12 @@ extension UIColor {
     static func tabBarPurple() -> UIColor {
         return UIColor(ColorHexNames.tabBarPurple.rawValue) ?? UIColor.purple
     }
+    
+    static func gradientPurple() -> UIColor {
+        return UIColor(ColorHexNames.gradientPurple.rawValue) ?? UIColor.purple
+    }
+    
+    static func gradientBlue() -> UIColor {
+        return UIColor(ColorHexNames.gradientBlue.rawValue) ?? UIColor.blue
+    }
 }
