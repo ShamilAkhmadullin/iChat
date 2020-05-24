@@ -75,8 +75,11 @@ final class GradientView: UIView {
         super.init(coder: coder)
         setGradient(from: .leading, to: .trailing, startColor: startColor, endColor: endColor)
     }
-    
-    // MARK: - Layout subviews
+}
+
+// MARK: - Layout subviews
+
+extension GradientView {
     
     override func layoutSubviews() {
         super.layoutSubviews()

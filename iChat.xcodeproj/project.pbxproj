@@ -41,6 +41,7 @@
 		2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */; };
 		2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */; };
 		2857CC85247A838B004D18A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CC84247A838B004D18A2 /* GradientView.swift */; };
+		2857CC87247A97FD004D18A2 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */; };
 		288EDD7D244CB77300A7BAAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */; };
 		288EDD81244CBD4300A7BAAD /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */; };
 		28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013942454C5B60026E123 /* SetupProfileViewController.swift */; };
@@ -85,6 +86,7 @@
 		2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsNames.swift; sourceTree = "<group>"; };
 		2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		2857CC84247A838B004D18A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		288EDD7C244CB77300A7BAAD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		288EDD80244CBD4300A7BAAD /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		28B013942454C5B60026E123 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				2857CB10246B3E94004D18A2 /* Protocol */,
+				2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */,
 				2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */,
 			);
 			path = Cells;
@@ -473,6 +476,7 @@
 				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
 				283F0B07245F056600C90C61 /* ListViewController.swift in Sources */,
 				283F0B17246170B400C90C61 /* Section.swift in Sources */,
+				2857CC87247A97FD004D18A2 /* WaitingChatCell.swift in Sources */,
 				283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */,
 				283CB3DD2443B1AC0040246F /* LabelsNames.swift in Sources */,
 				283F0B152461709700C90C61 /* MChat.swift in Sources */,

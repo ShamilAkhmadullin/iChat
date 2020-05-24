@@ -61,7 +61,7 @@ extension ListViewController {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .mainWhite()
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
+        collectionView.register(WaitingChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
         collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
     }
 }
@@ -78,9 +78,7 @@ extension ListViewController {
             
             switch section {
             case .waitingChats:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue, for: indexPath)
-                cell.backgroundColor = .purple
-                return cell
+                return self?.configure(cellType: WaitingChatCell.self, with: chat, for: indexPath)
             case .activeChats:
                 return self?.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
             }
