@@ -20,4 +20,6 @@ enum ColorHexNames: String {
     
     case gradientPurple = "#C9A1F0"
     case gradientBlue = "#7AB2EB"
+    
+    case sectionHeaderGray = "#929292"
 }

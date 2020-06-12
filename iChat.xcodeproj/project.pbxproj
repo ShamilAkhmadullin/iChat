@@ -37,6 +37,8 @@
 		283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */; };
 		284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */; };
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
+		2856B05C2493D77C00444C5F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B05B2493D77C00444C5F /* SectionHeader.swift */; };
+		2856B05E2493E31700444C5F /* SectionHeadersNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B05D2493E31700444C5F /* SectionHeadersNames.swift */; };
 		2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */; };
 		2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */; };
 		2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */; };
@@ -82,6 +84,8 @@
 		283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		284E3FA924463C2A00E2D3AD /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		2856B05B2493D77C00444C5F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		2856B05D2493E31700444C5F /* SectionHeadersNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersNames.swift; sourceTree = "<group>"; };
 		2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsNames.swift; sourceTree = "<group>"; };
 		2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				283F0B08245F066300C90C61 /* CellsIdentifiers.swift */,
 				283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */,
 				2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */,
+				2856B05D2493E31700444C5F /* SectionHeadersNames.swift */,
 			);
 			path = Names;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				2857CB10246B3E94004D18A2 /* Protocol */,
+				2856B05B2493D77C00444C5F /* SectionHeader.swift */,
 				2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */,
 				2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */,
 			);
@@ -458,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283F0B04245DED7600C90C61 /* SegmentedControlsNames.swift in Sources */,
+				2856B05E2493E31700444C5F /* SectionHeadersNames.swift in Sources */,
 				2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */,
 				283CB3DB2443B0FE0040246F /* UILabel+Extension.swift in Sources */,
 				2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */,
@@ -469,6 +476,7 @@
 				2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */,
 				282588FF24436A1D007000EC /* AppDelegate.swift in Sources */,
 				28B013952454C5B60026E123 /* SetupProfileViewController.swift in Sources */,
+				2856B05C2493D77C00444C5F /* SectionHeader.swift in Sources */,
 				284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */,
 				2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */,
 				283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */,

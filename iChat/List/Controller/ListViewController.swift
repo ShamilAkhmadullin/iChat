@@ -61,6 +61,8 @@ extension ListViewController {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .mainWhite()
         
+        collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue)
+        
         collectionView.register(WaitingChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
         collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
     }
@@ -75,7 +77,6 @@ extension ListViewController {
             guard let section = Section(rawValue: indexPath.section) else {
                 fatalError("Unable to setup section")
             }
-            
             switch section {
             case .waitingChats:
                 return self?.configure(cellType: WaitingChatCell.self, with: chat, for: indexPath)
@@ -83,13 +84,23 @@ extension ListViewController {
                 return self?.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
             }
         }
+        
+        dataSource?.supplementaryViewProvider = { collectionView, kind, indexPath in
+            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue, for: indexPath) as? SectionHeader else {
+                fatalError("Can not create new section header")
+            }
+            guard let section = Section(rawValue: indexPath.section) else {
+                fatalError("Unknown section kind")
+            }
+            sectionHeader.configure(section.description(), font: .laoSangamMN(20), textColor: .sectionHeaderGray())
+            return sectionHeader
+        }
     }
     
     private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {
             fatalError("Unable to dequeue \(cellType)")
         }
-        
         cell.configure(with: value)
         return cell
     }
@@ -104,7 +115,6 @@ extension ListViewController {
             guard let section = Section(rawValue: sectionIndex) else {
                 fatalError("Unable to setup section")
             }
-            
             switch section {
             case .waitingChats:
                 return self?.setWaitingChats()
@@ -112,7 +122,18 @@ extension ListViewController {
                 return self?.setActiveChats()
             }
         }
+        
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 20
+        layout.configuration = config
+
         return layout
+    }
+    
+    private func setSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
+        let sectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(1))
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        return sectionHeader
     }
     
     private func setWaitingChats() -> NSCollectionLayoutSection {
@@ -126,6 +147,9 @@ extension ListViewController {
         section.contentInsets = NSDirectionalEdgeInsets.init(top: 16, leading: 20, bottom: 0, trailing: 20)
         section.orthogonalScrollingBehavior = .continuous
         
+        let sectionHeader = setSectionHeader()
+        section.boundarySupplementaryItems = [sectionHeader]
+        
         return section
     }
     
@@ -138,6 +162,9 @@ extension ListViewController {
         
         section.interGroupSpacing = 8
         section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 20, bottom: 0, trailing: 20)
+        
+        let sectionHeader = setSectionHeader()
+        section.boundarySupplementaryItems = [sectionHeader]
         
         return section
     }

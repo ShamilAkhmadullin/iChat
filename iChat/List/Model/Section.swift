@@ -12,4 +12,13 @@ enum Section: Int, CaseIterable {
     
     case waitingChats
     case activeChats
+    
+    func description() -> String {
+        switch self {
+        case .waitingChats:
+            return SectionHeadersNames.waitingChats.rawValue
+        case .activeChats:
+            return SectionHeadersNames.activeChats.rawValue
+        }
+    }
 }
