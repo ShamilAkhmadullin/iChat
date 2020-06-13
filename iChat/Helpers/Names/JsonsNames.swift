@@ -12,4 +12,6 @@ enum JsonsNames: String {
     
     case waitingChats = "waitingChats.json"
     case activeChats = "activeChats.json"
+    
+    case users = "users.json"
 }

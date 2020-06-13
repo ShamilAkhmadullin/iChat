@@ -31,7 +31,7 @@
 		283F0B0F245F0A5600C90C61 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */; };
 		283F0B11245F0B5600C90C61 /* ViewControllersTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */; };
 		283F0B152461709700C90C61 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B142461709700C90C61 /* MChat.swift */; };
-		283F0B17246170B400C90C61 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B16246170B400C90C61 /* Section.swift */; };
+		283F0B17246170B400C90C61 /* ListSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B16246170B400C90C61 /* ListSections.swift */; };
 		283F0B4A2469608000C90C61 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 283F0B482469608000C90C61 /* activeChats.json */; };
 		283F0B4B2469608000C90C61 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 283F0B492469608000C90C61 /* waitingChats.json */; };
 		283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */; };
@@ -39,6 +39,9 @@
 		284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */; };
 		2856B05C2493D77C00444C5F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B05B2493D77C00444C5F /* SectionHeader.swift */; };
 		2856B05E2493E31700444C5F /* SectionHeadersNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B05D2493E31700444C5F /* SectionHeadersNames.swift */; };
+		2856B0602494EED900444C5F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2856B05F2494EED900444C5F /* users.json */; };
+		2856B0632494F12900444C5F /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B0622494F12900444C5F /* MUser.swift */; };
+		2856B0672494FDFF00444C5F /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856B0662494FDFF00444C5F /* PeopleSection.swift */; };
 		2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */; };
 		2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */; };
 		2857CB12246B3EA9004D18A2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */; };
@@ -78,7 +81,7 @@
 		283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		283F0B10245F0B5600C90C61 /* ViewControllersTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersTitles.swift; sourceTree = "<group>"; };
 		283F0B142461709700C90C61 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
-		283F0B16246170B400C90C61 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		283F0B16246170B400C90C61 /* ListSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSections.swift; sourceTree = "<group>"; };
 		283F0B482469608000C90C61 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		283F0B492469608000C90C61 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
@@ -86,6 +89,9 @@
 		284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		2856B05B2493D77C00444C5F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		2856B05D2493E31700444C5F /* SectionHeadersNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersNames.swift; sourceTree = "<group>"; };
+		2856B05F2494EED900444C5F /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		2856B0622494F12900444C5F /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		2856B0662494FDFF00444C5F /* PeopleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
 		2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		2857CB0C246B3DA4004D18A2 /* JsonsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonsNames.swift; sourceTree = "<group>"; };
 		2857CB11246B3EA9004D18A2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -208,7 +214,8 @@
 		283F0B0D245F0A4600C90C61 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */,
+				2856B0642494F13200444C5F /* Model */,
+				2856B0652494F2BA00444C5F /* Controller */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -225,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				283F0B142461709700C90C61 /* MChat.swift */,
-				283F0B16246170B400C90C61 /* Section.swift */,
+				283F0B16246170B400C90C61 /* ListSections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 			children = (
 				283F0B482469608000C90C61 /* activeChats.json */,
 				283F0B492469608000C90C61 /* waitingChats.json */,
+				2856B05F2494EED900444C5F /* users.json */,
 			);
 			path = Jsons;
 			sourceTree = "<group>";
@@ -273,11 +281,35 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		2856B0612494EEFC00444C5F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2856B05B2493D77C00444C5F /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2856B0642494F13200444C5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2856B0622494F12900444C5F /* MUser.swift */,
+				2856B0662494FDFF00444C5F /* PeopleSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2856B0652494F2BA00444C5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				283F0B0E245F0A5600C90C61 /* PeopleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2857CB0E246B3E64004D18A2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				2857CB10246B3E94004D18A2 /* Protocol */,
-				2856B05B2493D77C00444C5F /* SectionHeader.swift */,
 				2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */,
 				2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */,
 			);
@@ -287,6 +319,7 @@
 		2857CB0F246B3E74004D18A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2856B0612494EEFC00444C5F /* Header */,
 				2857CB0E246B3E64004D18A2 /* Cells */,
 				2857CC84247A838B004D18A2 /* GradientView.swift */,
 			);
@@ -449,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2856B0602494EED900444C5F /* users.json in Resources */,
 				2825890B24436A1E007000EC /* LaunchScreen.storyboard in Resources */,
 				283F0B4A2469608000C90C61 /* activeChats.json in Resources */,
 				2825890824436A1E007000EC /* Assets.xcassets in Resources */,
@@ -463,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2856B0672494FDFF00444C5F /* PeopleSection.swift in Sources */,
 				283F0B04245DED7600C90C61 /* SegmentedControlsNames.swift in Sources */,
 				2856B05E2493E31700444C5F /* SectionHeadersNames.swift in Sources */,
 				2857CB0D246B3DA4004D18A2 /* JsonsNames.swift in Sources */,
@@ -482,8 +517,9 @@
 				283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */,
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
 				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
+				2856B0632494F12900444C5F /* MUser.swift in Sources */,
 				283F0B07245F056600C90C61 /* ListViewController.swift in Sources */,
-				283F0B17246170B400C90C61 /* Section.swift in Sources */,
+				283F0B17246170B400C90C61 /* ListSections.swift in Sources */,
 				2857CC87247A97FD004D18A2 /* WaitingChatCell.swift in Sources */,
 				283CB3CC2443A8C00040246F /* UIFont+Extension.swift in Sources */,
 				283CB3DD2443B1AC0040246F /* LabelsNames.swift in Sources */,

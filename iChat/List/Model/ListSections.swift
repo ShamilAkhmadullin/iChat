@@ -1,5 +1,5 @@
 //
-//  Section.swift
+//  ListSections.swift
 //  iChat
 //
 //  Created by Shamil on 5/5/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Section: Int, CaseIterable {
+enum ListSections: Int, CaseIterable {
     
     case waitingChats
     case activeChats

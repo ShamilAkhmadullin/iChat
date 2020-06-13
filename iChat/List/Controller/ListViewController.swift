@@ -12,8 +12,8 @@ final class ListViewController: UIViewController {
     
     // MARK: - Properties
         
-    private var collectionView: UICollectionView!
-    private var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
+    private var collectionView: UICollectionView?
+    private var dataSource: UICollectionViewDiffableDataSource<ListSections, MChat>?
     
     private let waitingChats = Bundle.main.decode([MChat].self, from: JsonsNames.waitingChats.rawValue)
     private let activeChats = Bundle.main.decode([MChat].self, from: JsonsNames.activeChats.rawValue)
@@ -44,7 +44,6 @@ extension ListViewController {
         
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.obscuresBackgroundDuringPresentation = false
-        
         searchController.searchBar.delegate = self
     }
 }
@@ -56,15 +55,15 @@ extension ListViewController {
     private func setCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: setCompositionalLayout())
         
-        view.addSubview(collectionView)
+        view.addSubview(collectionView ?? UICollectionView())
         
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .mainWhite()
+        collectionView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView?.backgroundColor = .mainWhite()
         
-        collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue)
+        collectionView?.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue)
         
-        collectionView.register(WaitingChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
-        collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
+        collectionView?.register(WaitingChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.waitingChatsCell.rawValue)
+        collectionView?.register(ActiveChatCell.self, forCellWithReuseIdentifier: CellsIdentifiers.activeChatsCell.rawValue)
     }
 }
 
@@ -73,8 +72,8 @@ extension ListViewController {
 extension ListViewController {
     
     private func setDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView) { [weak self] collectionView, indexPath, chat -> UICollectionViewCell? in
-            guard let section = Section(rawValue: indexPath.section) else {
+        dataSource = UICollectionViewDiffableDataSource<ListSections, MChat>(collectionView: collectionView ?? UICollectionView()) { [weak self] collectionView, indexPath, chat -> UICollectionViewCell? in
+            guard let section = ListSections(rawValue: indexPath.section) else {
                 fatalError("Unable to setup section")
             }
             switch section {
@@ -89,7 +88,7 @@ extension ListViewController {
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue, for: indexPath) as? SectionHeader else {
                 fatalError("Can not create new section header")
             }
-            guard let section = Section(rawValue: indexPath.section) else {
+            guard let section = ListSections(rawValue: indexPath.section) else {
                 fatalError("Unknown section kind")
             }
             sectionHeader.configure(section.description(), font: .laoSangamMN(20), textColor: .sectionHeaderGray())
@@ -98,7 +97,7 @@ extension ListViewController {
     }
     
     private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {
+        guard let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else {
             fatalError("Unable to dequeue \(cellType)")
         }
         cell.configure(with: value)
@@ -112,7 +111,7 @@ extension ListViewController {
     
     private func setCompositionalLayout() -> UICollectionViewCompositionalLayout {
         let layout = UICollectionViewCompositionalLayout { [weak self] sectionIndex, layoutEnvironment -> NSCollectionLayoutSection? in
-            guard let section = Section(rawValue: sectionIndex) else {
+            guard let section = ListSections(rawValue: sectionIndex) else {
                 fatalError("Unable to setup section")
             }
             switch section {
@@ -126,7 +125,6 @@ extension ListViewController {
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = 20
         layout.configuration = config
-
         return layout
     }
     
@@ -141,15 +139,13 @@ extension ListViewController {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(88), heightDimension: .absolute(88))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let sectionHeader = setSectionHeader()
         let section = NSCollectionLayoutSection(group: group)
         
         section.interGroupSpacing = 16
         section.contentInsets = NSDirectionalEdgeInsets.init(top: 16, leading: 20, bottom: 0, trailing: 20)
         section.orthogonalScrollingBehavior = .continuous
-        
-        let sectionHeader = setSectionHeader()
         section.boundarySupplementaryItems = [sectionHeader]
-        
         return section
     }
     
@@ -158,14 +154,12 @@ extension ListViewController {
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(78))
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+        let sectionHeader = setSectionHeader()
         let section = NSCollectionLayoutSection(group: group)
         
         section.interGroupSpacing = 8
         section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 20, bottom: 0, trailing: 20)
-        
-        let sectionHeader = setSectionHeader()
         section.boundarySupplementaryItems = [sectionHeader]
-        
         return section
     }
 }
@@ -175,7 +169,7 @@ extension ListViewController {
 extension ListViewController {
     
     private func reloadData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, MChat>()
+        var snapshot = NSDiffableDataSourceSnapshot<ListSections, MChat>()
         snapshot.appendSections([.waitingChats, .activeChats])
         snapshot.appendItems(waitingChats, toSection: .waitingChats)
         snapshot.appendItems(activeChats, toSection: .activeChats)
