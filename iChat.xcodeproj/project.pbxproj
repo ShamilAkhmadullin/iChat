@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2806FDC024B2028400104203 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FDBF24B2028400104203 /* UserCell.swift */; };
 		2806FDC224B2085300104203 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FDC124B2085300104203 /* UIViewController+Extension.swift */; };
+		2806FDC524B2150000104203 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FDC424B2150000104203 /* ProfileViewController.swift */; };
 		282588FF24436A1D007000EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282588FE24436A1D007000EC /* AppDelegate.swift */; };
 		2825890124436A1D007000EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825890024436A1D007000EC /* SceneDelegate.swift */; };
 		2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825890224436A1D007000EC /* AuthorizationViewController.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		2806FDBF24B2028400104203 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		2806FDC124B2085300104203 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2806FDC424B2150000104203 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		282588FB24436A1D007000EC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		282588FE24436A1D007000EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2825890024436A1D007000EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2806FDC324B214E700104203 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2806FDC424B2150000104203 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		282588F224436A1D007000EC = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 				283F0B0C245F080500C90C61 /* MainTabBar */,
 				283F0B05245F055000C90C61 /* List */,
 				283F0B0D245F0A4600C90C61 /* People */,
+				2806FDC324B214E700104203 /* Profile */,
 				288EDD7A244CB5DF00A7BAAD /* Plist */,
 				288EDD78244CB48100A7BAAD /* Assets */,
 				283CB3CD2443A95D0040246F /* Helpers */,
@@ -543,6 +554,7 @@
 				284E3FAC24463FF000E2D3AD /* UIStackView+Extension.swift in Sources */,
 				283F0B11245F0B5600C90C61 /* ViewControllersTitles.swift in Sources */,
 				2857CC85247A838B004D18A2 /* GradientView.swift in Sources */,
+				2806FDC524B2150000104203 /* ProfileViewController.swift in Sources */,
 				283CB3D92443AFD00040246F /* ButtonsNames.swift in Sources */,
 				283CB3D02443A9740040246F /* FontsNames.swift in Sources */,
 			);

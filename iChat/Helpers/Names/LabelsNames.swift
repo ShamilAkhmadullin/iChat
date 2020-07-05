@@ -31,4 +31,7 @@ enum LabelsNames: String {
     
     case userName = "User name"
     case howAreYou = "How are you?"
+    
+    case defaultName = "Peter Ben"
+    case defaulAboutMe = "You have the opportunity to chat with the best man in the world!"
 }

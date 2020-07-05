@@ -13,7 +13,7 @@ final class UserCell: UICollectionViewCell {
     // MARK: - Properties
     
     let userImageView = UIImageView()
-    let userName = UILabel("Shamil", font: .laoSangamMN(20))
+    let userName = UILabel(LabelsNames.defaultName.rawValue, font: .laoSangamMN(20))
     let containerView = UIView()
     
     // MARK: - Initialization
