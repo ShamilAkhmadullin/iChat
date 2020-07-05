@@ -65,4 +65,8 @@ extension UIColor {
     static func sectionHeaderGray() -> UIColor {
         return UIColor(ColorHexNames.sectionHeaderGray.rawValue) ?? UIColor.gray
     }
+    
+    static func shadowGray() -> UIColor {
+        return UIColor(ColorHexNames.shadowGray.rawValue) ?? UIColor.gray
+    }
 }

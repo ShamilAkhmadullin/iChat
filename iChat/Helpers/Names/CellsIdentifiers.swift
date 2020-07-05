@@ -14,4 +14,5 @@ enum CellsIdentifiers: String {
     
     case waitingChatsCell = "waitingChatsCell"
     case activeChatsCell = "activeChatsCell"
+    case userCell = "userCell"
 }

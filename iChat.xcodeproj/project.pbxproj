@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2806FDC024B2028400104203 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FDBF24B2028400104203 /* UserCell.swift */; };
+		2806FDC224B2085300104203 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FDC124B2085300104203 /* UIViewController+Extension.swift */; };
 		282588FF24436A1D007000EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282588FE24436A1D007000EC /* AppDelegate.swift */; };
 		2825890124436A1D007000EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825890024436A1D007000EC /* SceneDelegate.swift */; };
 		2825890324436A1D007000EC /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825890224436A1D007000EC /* AuthorizationViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2806FDBF24B2028400104203 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		2806FDC124B2085300104203 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		282588FB24436A1D007000EC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		282588FE24436A1D007000EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2825890024436A1D007000EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				284E3FAB24463FF000E2D3AD /* UIStackView+Extension.swift */,
 				283F0B01245DED0200C90C61 /* UISegmentedControl+Extension.swift */,
 				283F0B4D2469613F00C90C61 /* Bundle+Extension.swift */,
+				2806FDC124B2085300104203 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 		283F0B05245F055000C90C61 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2857CB10246B3E94004D18A2 /* Protocol */,
 				283F0B132461708B00C90C61 /* Model */,
 				2857CB0F246B3E74004D18A2 /* View */,
 				283F0B122461708300C90C61 /* Controller */,
@@ -309,9 +315,9 @@
 		2857CB0E246B3E64004D18A2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2857CB10246B3E94004D18A2 /* Protocol */,
 				2857CC86247A97FD004D18A2 /* WaitingChatCell.swift */,
 				2857CB0A246B358E004D18A2 /* ActiveChatCell.swift */,
+				2806FDBF24B2028400104203 /* UserCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -515,6 +521,7 @@
 				284E3FAA24463C2A00E2D3AD /* ButtonFormView.swift in Sources */,
 				2857CB0B246B358E004D18A2 /* ActiveChatCell.swift in Sources */,
 				283F0B02245DED0200C90C61 /* UISegmentedControl+Extension.swift in Sources */,
+				2806FDC224B2085300104203 /* UIViewController+Extension.swift in Sources */,
 				283CB3D52443AA830040246F /* UIColor+Extension.swift in Sources */,
 				283CB3D22443A9960040246F /* SceneName.swift in Sources */,
 				2856B0632494F12900444C5F /* MUser.swift in Sources */,
@@ -529,6 +536,7 @@
 				283F0B4E2469613F00C90C61 /* Bundle+Extension.swift in Sources */,
 				28B013982454C9050026E123 /* AddPhotoView.swift in Sources */,
 				283F0B0B245F07FE00C90C61 /* MainTabBarController.swift in Sources */,
+				2806FDC024B2028400104203 /* UserCell.swift in Sources */,
 				283F0B09245F066300C90C61 /* CellsIdentifiers.swift in Sources */,
 				2825890124436A1D007000EC /* SceneDelegate.swift in Sources */,
 				283F0B0F245F0A5600C90C61 /* PeopleViewController.swift in Sources */,

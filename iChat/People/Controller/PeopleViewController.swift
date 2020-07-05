@@ -70,8 +70,8 @@ extension PeopleViewController {
         collectionView?.backgroundColor = .mainWhite()
         
         collectionView?.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CellsIdentifiers.sectionHeader.rawValue)
-        
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+
+        collectionView?.register(UserCell.self, forCellWithReuseIdentifier: CellsIdentifiers.userCell.rawValue)
     }
 }
 
@@ -80,15 +80,13 @@ extension PeopleViewController {
 extension PeopleViewController {
     
     private func setDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<PeopleSection, MUser>(collectionView: collectionView ?? UICollectionView()) { collectionView, indexPath, user -> UICollectionViewCell? in
+        dataSource = UICollectionViewDiffableDataSource<PeopleSection, MUser>(collectionView: collectionView ?? UICollectionView()) { [weak self] collectionView, indexPath, user -> UICollectionViewCell? in
             guard let section = PeopleSection(rawValue: indexPath.section) else {
                 fatalError("Unable to setup section")
             }
             switch section {
             case .users:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-                cell.backgroundColor = .systemBlue
-                return cell
+                return self?.configure(collectionView, cellType: UserCell.self, with: user, for: indexPath)
             }
         }
         
